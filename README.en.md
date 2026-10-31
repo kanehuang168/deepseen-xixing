@@ -19,11 +19,11 @@ List without installation: `npx skills add kanehuang168/deepseen-xixing --list`.
 
 - [deepseen-xixing](skills/deepseen-xixing/SKILL.md) — [中文](skills/deepseen-xixing/SKILL.md)
 
-Keep one installed entry per Skill ID. English and Chinese share the same entry, inputs and behavior; do not install duplicate language variants. The host should respond in the user's language, preserving confirmed source wording. Tool CLIs accept `--lang en` or `--lang zh-CN` (Chinese remains the default).
+Keep one installed entry per Skill ID. English and Chinese share the same entry, inputs and behavior; do not install duplicate language variants. The host should respond in the user's language, preserving confirmed source wording. This method-only Skill has no bundled CLI; respond in the user's language.
 
 ## Example and usage
 
-Read the [English example](skills/deepseen-xixing/references/cangjie-adaptation.en.md) and the linked Skill instructions for the actual input contract, dependencies and commands. Examples are self-authored/fictional, not customer data, verified market findings or generated-quality proof. Python helpers require Python 3.10+; video checks also require ffprobe and ffmpeg on PATH. After installation locate scripts and assets relative to the installed Skill directory.
+Read the [self-authored example](skills/deepseen-xixing/assets/trial-example.en.md) and [English instructions](skills/deepseen-xixing/SKILL.en.md). This method-only edition has no bundled distillation CLI or external Skill content. Examples are fictional proposals, not real execution or effectiveness evidence.
 
 ## Connected workflow
 
@@ -38,3 +38,5 @@ Visit [DeepSeen](https://deepseen.ai/?utm_source=github&utm_medium=skill&utm_cam
 ## License and evidence
 
 [MIT](LICENSE) covers these repository files, not private DeepSeen kernels, cloud services or other people's materials. Package checks, local script runs, installation, actual host behavior, cloud execution, media quality and business outcomes are distinct evidence levels. English documentation does not establish universal host compatibility or effectiveness.
+
+Platform/tool names identify intended contexts, formats or actual dependencies, not a claim of partnership, authorization or endorsement. Applicable licenses and required copyright notices remain in force.
