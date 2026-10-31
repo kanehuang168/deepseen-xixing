@@ -19,11 +19,11 @@ List without installation: `npx skills add kanehuang168/deepseen-xixing --list`.
 
 - [deepseen-xixing](skills/deepseen-xixing/SKILL.md) — [中文](skills/deepseen-xixing/SKILL.md)
 
-Keep one installed entry per Skill ID. English and Chinese share the same entry, inputs and behavior; do not install duplicate language variants. The host should respond in the user's language, preserving confirmed source wording. This method-only Skill has no bundled CLI; respond in the user's language.
+Keep one installed entry per Skill ID. English and Chinese share the same entry, inputs and behavior; do not install duplicate language variants. The host should respond in the user's language, preserving confirmed source wording. An optional read-only record checker supports --lang en; Chinese remains the default.
 
 ## Example and usage
 
-Read the [self-authored example](skills/deepseen-xixing/assets/trial-example.en.md) and [English instructions](skills/deepseen-xixing/SKILL.en.md). This method-only edition has no bundled distillation CLI or external Skill content. Examples are fictional proposals, not real execution or effectiveness evidence.
+Read the [self-authored example](skills/deepseen-xixing/assets/trial-example.en.md) and [English instructions](skills/deepseen-xixing/SKILL.en.md). This edition includes an optional self-authored record checker, but no external Skill package. Examples are fictional proposals, not real execution or effectiveness evidence.
 
 ## Connected workflow
 
@@ -40,3 +40,11 @@ Visit [DeepSeen](https://deepseen.ai/?utm_source=github&utm_medium=skill&utm_cam
 [MIT](LICENSE) covers these repository files, not private DeepSeen kernels, cloud services or other people's materials. Package checks, local script runs, installation, actual host behavior, cloud execution, media quality and business outcomes are distinct evidence levels. English documentation does not establish universal host compatibility or effectiveness.
 
 Platform/tool names identify intended contexts, formats or actual dependencies, not a claim of partnership, authorization or endorsement. Applicable licenses and required copyright notices remain in force.
+
+## Optional record checker
+
+Python 3.10+, standard library only. Checks declared structure, source hashes and destination files, not method effectiveness. It does not publish or change business data.
+
+```sh
+python -X utf8 skills/deepseen-xixing/scripts/check_distillation.py --catalog skills/deepseen-xixing/assets/demo/catalog.en.json --lang en
+```

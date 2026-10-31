@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: 祥子｜跨境无疆&DeepSeen AI创始人
   product: DeepSeen
-  version: 1.0.2
+  version: 1.0.3
   audience: 主要面向TikTok跨境卖家
   invocation_policy: MODEL_ELIGIBLE
   languages: en, zh-CN
@@ -35,3 +35,7 @@ Use the [method trial record](references/method-trial.en.md) to retain inputs, b
 Deliver the proposal, supporting/counter evidence, actual tests, unverified items and next action. See the [self-authored example](assets/trial-example.en.md). Without independent comparison label author walkthroughs or local checks honestly, not quality uplift. Publication, installation, real execution and business effects are different evidence levels.
 
 Do not automatically install external programs, modify production, duplicate paid jobs, publish, edit memory or claim continuous background evolution. No fixed agent team is required; use only genuinely available and authorized capabilities. When third-party content is proposed for public use, keep lawful source/permission evidence or exclude it if rights remain unclear.
+
+## Optional record checks
+
+Use the self-authored [record contract](references/candidate-contract.en.md) and [checker](scripts/check_distillation.py) only when structural record checks are useful. The [fictional fixture](assets/demo/catalog.en.json) is not third-party material or evidence of method effectiveness. Python 3.10+, standard library; --lang en selects English output. This is not an automatic distillation or publication engine.
