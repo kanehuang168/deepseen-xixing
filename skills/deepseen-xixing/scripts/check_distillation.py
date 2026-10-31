@@ -63,15 +63,30 @@ def check_catalog(catalog, root):
     return {'status':'STRUCTURE_CHECK_PASSED','sourceSha256':source['sha256'],'sourceTasks':len(task_ids),'units':len(units),'dispositions':counts,'limitsZh':'仅检查所声明记录的结构、指纹、文件去向与覆盖；不证明来源语义、许可、方法效果、完整来源覆盖或发布资格。'}
 
 
+ERRORS_EN = {'来源与交付位置必须是非空相对路径': 'Source and destination must be nonempty relative paths.', '来源或交付文件缺失，或路径超出本次记录目录': 'A source/destination file is missing or escapes the record directory.', '候选记录必须是对象': 'The catalog must be an object.', '来源记录必须是对象': 'The source record must be an object.', '来源指纹已改变，旧候选关联需要复核': 'The source hash changed; candidate bindings need review.', '需要明确的来源任务和候选/参考去向记录': 'Declared source tasks and candidate/reference destinations are required.', '来源任务必须有稳定编号': 'Source tasks need stable identifiers.', '来源任务编号重复': 'Duplicate source task identifiers.', '候选条目必须是对象': 'A candidate entry must be an object.', '方法编号缺失或重复': 'Missing or duplicate method identifiers.', '候选必须关联已声明的来源任务': 'Candidates must reference declared source tasks.', '出处定位缺失或未在所给文本中找到': 'Evidence locator is missing or not present in the provided source.', '必须区分候选、参考、待补证与不采用': 'Separate candidates, references, evidence gaps and rejected items.', '待补证或不采用项需要明确理由': 'Held or rejected items require a reason.', '声明的重要来源任务缺少去向：': 'Declared source tasks lack a destination: '}
+
 def main():
     parser=argparse.ArgumentParser(description='只读检查本地方法蒸馏记录，不联网、不执行来源脚本')
+    parser.add_argument('--lang', choices=['zh-CN','en'], default='zh-CN')
     parser.add_argument('--catalog',type=Path,required=True)
     args=parser.parse_args()
     try:
         catalog=json.loads(args.catalog.read_text(encoding='utf-8'))
-        print(json.dumps(check_catalog(catalog,args.catalog.parent),ensure_ascii=False,indent=2))
+        result = check_catalog(catalog,args.catalog.parent)
+        if args.lang == 'en':
+            result.pop('limitsZh', None)
+            result['limitsEn'] = 'Checks declared structure, hashes, file destinations and task coverage only; not source meaning, rights, effectiveness, exhaustive coverage or release eligibility.'
+        print(json.dumps(result,ensure_ascii=False,indent=2))
     except (OSError, ValueError, KeyError, TypeError) as error:
-        print('结构检查未完成：'+str(error))
+        if args.lang == 'en':
+            detail=str(error)
+            for original,english in ERRORS_EN.items():
+                if detail.startswith(original):
+                    detail=english+detail[len(original):]; break
+            else: detail='Invalid input, JSON or file access: '+type(error).__name__
+            print('Structure check incomplete: '+detail)
+        else:
+            print('结构检查未完成：'+str(error))
         return 2
     return 0
 

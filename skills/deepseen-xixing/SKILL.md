@@ -1,13 +1,17 @@
 ---
 name: deepseen-xixing
 description: 从获准文章、书、视频转写、外部Skill或已有实践提炼可试用方法，比较目标差量、记录覆盖和交付去向、区分参考与缺证。不是简单摘要、人物扮演或自动复制发布。
+  Distill authorized sources into traceable, testable methods with explicit coverage
+  and delivery destinations. Not summary-only work or automatic copying/publication.
+  吸星大法
 license: MIT
 metadata:
-  author: "祥子｜跨境无疆&DeepSeen AI创始人"
-  product: "DeepSeen"
-  version: "1.0.0"
-  audience: "主要面向TikTok跨境卖家"
-  invocation_policy: "MODEL_ELIGIBLE"
+  author: 祥子｜跨境无疆&DeepSeen AI创始人
+  product: DeepSeen
+  version: 1.0.1
+  audience: 主要面向TikTok跨境卖家
+  invocation_policy: MODEL_ELIGIBLE
+  languages: zh-CN, en
 ---
 
 # DeepSeen 吸星大法
@@ -39,3 +43,8 @@ metadata:
 脚本可检查本地记录是否漏项、断链或漂移，不能证明方法真实有效。使用[结构校验器](scripts/check_distillation.py)，运行环境Python 3.10+，只读、不联网；[自编样例](assets/demo/catalog.json)与[评测用例](references/evaluation-cases.md)说明边界。仓颉来源的本轮差量与排除项见[来源与吸纳说明](references/cangjie-adaptation.md)。
 
 有实证的改动进入获准范围，保留版本、实际验收证据和回滚入口；失败则保留有效旧版并修订失败部分，不删除成功产物或自动关闭反馈。发布文件、宿主可发现、真实调用和业务效果分别报告。不得自动修改记忆、持续自我升级、模仿人物人格或承诺无限后台进化。
+
+
+## 语言入口
+
+默认以简体中文交付。用户使用英文或明确要求英文时，读取[English instructions](SKILL.en.md)及其链接的英文资料，按用户语言输出；不改变确认稿原文或数字，也不需要另装一个Skill。工具默认中文，英文报告显式使用`--lang en`。

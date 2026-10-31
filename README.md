@@ -1,3 +1,5 @@
+简体中文 | [English](README.en.md)
+
 # DeepSeen 吸星大法
 
 作者：祥子｜跨境无疆&DeepSeen AI创始人
