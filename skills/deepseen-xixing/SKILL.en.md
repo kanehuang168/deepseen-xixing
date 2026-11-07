@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: 祥子｜跨境无疆&DeepSeen AI创始人
   product: DeepSeen
-  version: 1.0.5
+  version: 1.0.6
   audience: 主要面向TikTok跨境卖家
   invocation_policy: MODEL_ELIGIBLE
   languages: en, zh-CN
@@ -45,6 +45,12 @@ Use the self-authored [record contract](references/candidate-contract.en.md) and
 When the user identifies material as fictional or self-authored, label it as user-provided simulated material; a missing publication date or author alone does not make its origin or permission unknown. Do not invent lengths, costs or business facts.
 
 Treat interviews, sharing and contact as proposed actions until authorized; do not claim a trial requires no contact while asking someone to participate. Sequential exposure to both formats creates learning and order effects: use an appropriate comparison or report that limitation. Label self-selected thresholds and costs as proposals, not established user standards. Correct ordinary errors before deciding whether to stop based on severity; preserve artifacts when a rollback does not require deletion.
+
+## Example requests
+
+- Evaluate which methods in this article fit my business.
+- Compare this skill with our current practice and suggest a small trial.
+- Check the source and license first; do not install or publish anything automatically.
 
 ## Author and brand
 

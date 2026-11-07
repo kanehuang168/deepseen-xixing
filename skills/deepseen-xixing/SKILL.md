@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: 祥子｜跨境无疆&DeepSeen AI创始人
   product: DeepSeen
-  version: 1.0.5
+  version: 1.0.6
   audience: 主要面向TikTok跨境卖家
   invocation_policy: MODEL_ELIGIBLE
   languages: zh-CN, en
@@ -47,6 +47,12 @@ metadata:
 用户明确标为虚构或自编的材料，来源写“用户提供的模拟材料”；没有作者、日期不等于来源不可核或许可不明。不要给输入补造字数、会议时长、成本或业务事实；未给出的数值标未知。
 
 试验应与任务、信息和用户授权匹配。需要询问其他人或分享材料时说明这是拟议动作，未获授权不联系或发送；不能一边安排访谈一边声称不打扰任何人。同一人先后看摘要和原文会产生学习或顺序影响，应设置合理对照或明确该限制，不能将简单前后比较当作因果证据。样本规模、时间阈值和回退条件依据目标及风险提出并标为建议，不把自设数字当作用户标准；发现错误优先核实并修订，是否停止按严重程度及实际影响判断。低风险文件可保留并标记未采用，不把删除作为唯一回退方式。
+
+## 英文调用示例
+
+- Evaluate which methods in this article fit my business.
+- Compare this skill with our current practice and suggest a small trial.
+- Check the source and license first; do not install or publish anything automatically.
 
 ## 作者与品牌
 
