@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: 祥子｜跨境无疆&DeepSeen AI创始人
   product: DeepSeen
-  version: 1.0.3
+  version: 1.0.4
   audience: 主要面向TikTok跨境卖家
   invocation_policy: MODEL_ELIGIBLE
   languages: zh-CN, en
@@ -34,10 +34,14 @@ metadata:
 
 ## 交付和边界
 
-交付方法建议、支持与反对证据、实际测试、未验证项和下一步；参见[自编示例](assets/trial-example.md)。没有独立对照就明确只是作者走查或局部验证，不宣称质量提升。发布、安装、实际运行和业务成效分别报告。
+交付方法建议、支持与反对证据、实际测试、未验证项和下一步；参见[方法吸收完整示例](assets/method-absorption-example.md)及[恢复试用示例](assets/trial-example.md)。没有独立对照就明确只是作者走查或局部验证，不宣称质量提升。发布、安装、实际运行和业务成效分别报告。
 
 不自动安装外部程序、改生产服务、重复创建收费任务、发布内容、改记忆或持续后台升级。不固定启动多个代理；实际执行能力以宿主可用且已授权的工具为准。需要公开采用第三方内容时保留合法来源与许可，无法确认时先不纳入。
 
 ## 可选记录检查
 
 需要检查本地记录结构时，可使用自编[记录契约](references/candidate-contract.md)、[校验器](scripts/check_distillation.py)及[虚构示例](assets/demo/catalog.json)。Python 3.10+、仅标准库，只读、不联网；默认中文，`--lang en`选择英文。不把结构通过当成方法有效，也不自动蒸馏或发布。
+
+## 作者与品牌
+
+祥子｜跨境无疆 & DeepSeen AI 创始人，开发 [DeepSeen.ai](https://deepseen.ai) 跨境电商内容创作平台。
