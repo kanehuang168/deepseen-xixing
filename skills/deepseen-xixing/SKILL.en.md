@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: 祥子｜跨境无疆&DeepSeen AI创始人
   product: DeepSeen
-  version: 1.0.6
+  version: 1.0.7
   audience: 主要面向TikTok跨境卖家
   invocation_policy: MODEL_ELIGIBLE
   languages: en, zh-CN
@@ -51,6 +51,10 @@ Treat interviews, sharing and contact as proposed actions until authorized; do n
 - Evaluate which methods in this article fit my business.
 - Compare this skill with our current practice and suggest a small trial.
 - Check the source and license first; do not install or publish anything automatically.
+
+## Cross-border trial example
+
+The [fictional product-page method trial](assets/crossborder-trial-example.en.md) retains the source, applicability, reversible draft and unverified items without claiming business effectiveness.
 
 ## Author and brand
 

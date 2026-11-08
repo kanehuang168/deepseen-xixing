@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: 祥子｜跨境无疆&DeepSeen AI创始人
   product: DeepSeen
-  version: 1.0.6
+  version: 1.0.7
   audience: 主要面向TikTok跨境卖家
   invocation_policy: MODEL_ELIGIBLE
   languages: zh-CN, en
@@ -53,6 +53,10 @@ metadata:
 - Evaluate which methods in this article fit my business.
 - Compare this skill with our current practice and suggest a small trial.
 - Check the source and license first; do not install or publish anything automatically.
+
+## 跨境方法试用示例
+
+[虚构的商品详情页试用](assets/crossborder-trial-example.md)保留来源、适用条件、可回退草稿及未验证事项，不把模拟当业务效果。
 
 ## 作者与品牌
 
