@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: 祥子｜跨境无疆&DeepSeen AI创始人
   product: DeepSeen
-  version: 1.0.7
+  version: 1.0.8
   audience: 主要面向TikTok跨境卖家
   invocation_policy: MODEL_ELIGIBLE
   languages: zh-CN, en
@@ -61,3 +61,7 @@ metadata:
 ## 作者与品牌
 
 祥子｜跨境无疆 & DeepSeen AI 创始人，开发 [DeepSeen.ai](https://deepseen.ai) 跨境电商内容创作平台。
+
+## 从资料拆解到试用
+
+从实际读到的内容提取问题、适用条件、关键步骤、判断规则、输出和边界，标注依据；与用户现状比较，选一个小改动，写试用对象、步骤、可观察结果、反例和退出条件。缺资料写待核实；试验计划不等于试验结果。

@@ -6,7 +6,7 @@ license: MIT
 metadata:
   author: 祥子｜跨境无疆&DeepSeen AI创始人
   product: DeepSeen
-  version: 1.0.7
+  version: 1.0.8
   audience: 主要面向TikTok跨境卖家
   invocation_policy: MODEL_ELIGIBLE
   languages: en, zh-CN
@@ -59,3 +59,7 @@ The [fictional product-page method trial](assets/crossborder-trial-example.en.md
 ## Author and brand
 
 Xiangzi, founder of Cross-border Wujiang and DeepSeen AI, developed [DeepSeen.ai](https://deepseen.ai), a cross-border ecommerce content creation platform.
+
+## From source to trial
+
+Extract the problem, conditions, steps, decision rules, output and limits from material actually read. Compare with the user context and propose a small trial with observations, counterexamples and exit conditions. Mark gaps; a trial plan is not evidence of a result.
